@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Radhika</title>
+    <title>Cafe tronton</title>
     <style>
         * {
             box-sizing: border-box;
@@ -169,6 +169,44 @@
             font-size: 1.1rem;
         }
 
+        .footer {
+            background: #3c2518;
+            color: #f8ebde;
+            margin-top: 30px;
+        }
+
+        .footer-inner {
+            width: min(1100px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 40px 0 24px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .footer-brand h3,
+        .footer-section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: #f7d7a9;
+        }
+
+        .footer-brand p,
+        .footer-section p,
+        .footer-section a {
+            color: #f1e3d0;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 16px 0 22px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+            font-size: 0.92rem;
+            color: #e7d9c7;
+        }
+
         @media (max-width: 768px) {
             .hero {
                 flex-direction: column;
@@ -186,6 +224,10 @@
             .hero-image-box {
                 width: 280px;
                 height: 280px;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -249,5 +291,32 @@
             </div>
         </section>
     </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>Kopi Tronton</h3>
+                <p>Tempat nongkrong santai dengan aroma kopi hangat dan suasana nyaman untuk semua kalangan.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 +62 812-3456-7890</p>
+                <p>✉️ hello@kopitronton.com</p>
+                <p>📱 @kopitronton</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Location Info</h3>
+                <p>📍 Jl. Merdeka No. 45, Bandung</p>
+                <p>🕒 Buka: 08.00 - 22.00</p>
+                <p>📆 Setiap Hari</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Kopi Tronton. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
